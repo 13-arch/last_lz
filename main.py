@@ -1,4 +1,4 @@
-# Import all nesessary libs and modules
+# Import libs 
 import pyramid as p
 import Archimed as A
 
@@ -11,9 +11,9 @@ def main():
         height = float(input("Введите высоту усечённой пирамиды "))
         print(f"ОбЪём усечённой пирамиды составляет {p.Value(base_1, base_2, height)} кубических единиц")
     if user_choise == 2:
-        mass = float(input("Введите массу объекта "))
-        volume = float(input("Введите объём погружённой части объекта "))
-        density = float(input("Введите плотность объекта "))
+        mass = float(input("Введите массу "))
+        volume = float(input("Введите объём погружённой части"))
+        density = float(input("Введите плотность "))
         A.Counting(mass, volume, density)
 
 
